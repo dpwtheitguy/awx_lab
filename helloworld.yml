@@ -5,5 +5,5 @@
   tasks:
     - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
       copy:
-        content: '{{ remote_install_path }}'
+        content: '{{ ansible_facts["eth0"]["ipv4"]["address"] }}'
         dest: /tmp/testfile.txt
