@@ -1,5 +1,7 @@
 ---
 # Basic hello world wrapper
+remote_install_path: /opt/my_app_config
+
 - name: This is a hello-world example
   hosts: all
   tasks:
